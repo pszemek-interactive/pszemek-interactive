@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+}
+/* CONTAINER DZIELI WIZUALNIE STRONE NA 3 DIVY */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 220px 50px 1fr 50px;
+}
+/* LOGO NA SAMEJ GÓRZE EKRANU */
+.logo {
+    flex: 0;
+    text-align: center;
+    background-color: black;
+}
+/* TO PONIŻEJ ODPOWIADA ZA PRZYCISKI */
+.links {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: #FF006E;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.links a {
+    border: #FF006E 5px solid;
+    flex: 1;
+    background-color: black;
+    color: #FF006E;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 170%;
+}
+.links button{
+    cursor: pointer;
+    border: black 0px solid;
+    flex: 1;
+    background-color: black;
+    color: #FF006E;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100%;
+}
+.links button:hover {
+    border-color: hsl(334, 100%, 30%);
+    color: hsl(334, 100%, 30%);
+}
+/* A TUTAJ JEST CONTENT */
+
+.content {
+    background-color: #350018;
+    color: black;
+    font: 18px normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+}
+.content header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.contentcenter {
+    background-color: rgb(228, 209, 223);
+}
+/* A TUTAJ SPÓD*/
+.foot {
+    text-align: center;
+    background-color: black;
+    border-top: #FF006E 5px solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FF006E;
+}
